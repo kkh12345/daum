@@ -1,0 +1,84 @@
+@use './variables' as *;
+@mixin icon-angle($x, $y, $width, $height, $display) {
+  display: $display;
+  width: $width;
+  height: $height;
+  background: url(../imgs/ico_pctop_250417.svg) no-repeat;
+  background-size: 300px 300px;
+  background-position: $x $y;
+}
+
+@mixin board-tit-icon($display) {
+  display: $display;
+  width: 40px;
+  aspect-ratio: 1;
+  margin-right: 13px;
+  background: url(../imgs/board_img_title.png) no-repeat;
+  background-size: 200px 200px;
+}
+
+@mixin thumb-wrap($radius) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: $radius;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+  }
+}
+@mixin thumb-radius8() {
+  @include thumb-wrap($border-radius8);
+}
+@mixin thumb-expand() {
+  transform: scale(1.05);
+}
+
+@mixin ellipsis($line-clamp) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-clamp;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@mixin grid-container($columns, $rows, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+}
+@mixin dot-between-letters($display) {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+@mixin page-count() {
+  & b {
+    margin-right: 4px;
+  }
+  & .total {
+    color: #0000007a;
+  }
+}
+@mixin ad-badge() {
+  display: block;
+  width: 24px;
+  height: 16px;
+  margin-top: -8px;
+  background: url(../imgs/ico_shopbox.svg) no-repeat;
+  background-size: 200px;
+  background-position: -70px -20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+@mixin icon-help-white() {
+  @include icon-angle(-65px, -35px, 18px, 18px, block);
+}
+@mixin icon-help-gray() {
+  @include icon-angle(-130px, -35px, 18px, 18px, block);
+}

@@ -1,0 +1,2471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daum</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="full-container">
+      <div class="full-inner">
+        <!-- ====== 헤더 ===== -->
+        <header id="header">
+          <div class="search-area">
+            <h2 class="sr-hidden">검색 바</h2>
+            <div class="search-bar">
+              <!-- 로고 -->
+              <h1 class="logo">
+                <a href="/" aria-label="홈페이지로 이동"
+                  ><svg
+                    width="56"
+                    height="52"
+                    viewBox="0 0 56 52"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_2046_4735)">
+                      <path
+                        d="M36 20.36C39.1152 20.36 41.6352 23.072 41.5152 26.2136C41.4024 29.2016 38.8536 31.64 35.8632 31.64H31.9176C31.6536 31.64 31.4376 31.424 31.4376 31.16V20.84C31.4376 20.576 31.6536 20.36 31.9176 20.36H35.9976M36 14H26.4C25.6056 14 24.96 14.6456 24.96 15.44V36.56C24.96 37.3544 25.6056 38 26.4 38H36C42.6264 38 48 32.6264 48 26C48 19.3736 42.6264 14 36 14Z"
+                        fill="#273552"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2046_4735">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(24 14)"
+                        ></rect>
+                      </clipPath>
+                    </defs></svg
+                ></a>
+              </h1>
+              <!-- 인풋 -->
+              <label class="sr-hidden" for="search-input"
+                >검색어를 입력하세요</label
+              >
+              <input type="text" id="search-input" class="search-input" />
+              <!-- 키보드버튼 -->
+              <button
+                type="button"
+                class="keyboard-btn"
+                aria-label="키보드 입력 도구 열기"
+              >
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="2"
+                    y="6.5"
+                    width="24"
+                    height="15"
+                    rx="4"
+                    stroke-width="2"
+                    stroke="#000000b8"
+                  ></rect>
+                  <rect
+                    x="6"
+                    y="9.5"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="9.5"
+                    y="9.5"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="13"
+                    y="9.5"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="16.5"
+                    y="9.5"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="20"
+                    y="9.5"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="6"
+                    y="13"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="9.5"
+                    y="13"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="13"
+                    y="13"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="16.5"
+                    y="13"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="20"
+                    y="13"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="6"
+                    y="16.5"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="9.5"
+                    y="16.5"
+                    width="9"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                  <rect
+                    x="20"
+                    y="16.5"
+                    width="2"
+                    height="2"
+                    rx="0.5"
+                    fill="#000000b8"
+                  ></rect>
+                </svg>
+              </button>
+              <!-- 검색버튼 -->
+              <a href="#" class="search-btn" aria-label="검색 결과 보기"
+                ><svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6 12.5C6 8.91015 8.91015 6 12.5 6C16.0899 6 19 8.91015 19 12.5C19 16.0899 16.0899 19 12.5 19C8.91015 19 6 16.0899 6 12.5ZM12.5 4C7.80558 4 4 7.80558 4 12.5C4 17.1944 7.80558 21 12.5 21C14.5006 21 16.3399 20.3088 17.7919 19.1522C17.836 19.2314 17.8916 19.3059 17.9589 19.3731L22.9589 24.3731C23.3494 24.7636 23.9826 24.7636 24.3731 24.3731C24.7636 23.9826 24.7636 23.3494 24.3731 22.9589L19.3731 17.9589C19.3059 17.8916 19.2314 17.836 19.1522 17.7919C20.3088 16.3399 21 14.5006 21 12.5C21 7.80558 17.1944 4 12.5 4Z"
+                    fill="#000000b8"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+          <nav class="quick-nav">
+            <ul class="quick-menu">
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick0.webp" alt="지도아이콘" />지도</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick1.webp" alt="금융아이콘" />금융</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick2.webp" alt="메일아이콘" />메일</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick3.webp" alt="날씨아이콘" />날씨</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick4.webp" alt="스포츠아이콘" />스포츠</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick5.webp" alt="카페아이콘" />카페</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick6.webp" alt="게임아이콘" />게임</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick7.webp" alt="웹툰아이콘" />웹툰</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick8.webp" alt="사전아이콘" />사전</a
+                >
+              </li>
+              <li class="quick-menu-item">
+                <a href="#"
+                  ><img src="./imgs/quick9.webp" alt="쇼핑아이콘" />쇼핑</a
+                >
+              </li>
+            </ul>
+            <a href="#" class="view-more-btn" aria-label="메뉴 더보기"></a>
+          </nav>
+        </header>
+        <!-- ===== 메인 ===== -->
+        <main id="main">
+          <!-- 메인 왼쪽 -->
+          <div class="main-left">
+            <!-- 광고 배너 1 -->
+            <section class="left-ad-banner white-box">
+              <h2 class="sr-hidden">광고배너</h2>
+              <a href="#" class="ad-content" role="banner">
+                <span class="ad-mark"></span>
+                <img
+                  class="thumb-img"
+                  src="./imgs/left_ad_thumb1.jpg"
+                  alt="썸네일이미지"
+                />
+                <div class="txt-wrap">
+                  <span class="brand-name" aria-label="브랜드 세이브더칠드런"
+                    >세이브더칠드런</span
+                  >
+                  <h3 class="tit">
+                    아이들을 구하는 기부팔찌를 착용하세요
+                    <button
+                      type="button"
+                      class="view-more-btn"
+                      aria-label="자세히 보기"
+                    ></button>
+                  </h3>
+                  <p class="desc">
+                    우리가 차는 긴급구호 팔찌가,재난 속 아이들을 구하는 힘이
+                    됩니다.
+                  </p>
+                </div>
+              </a>
+            </section>
+            <!-- 뉴스 섹션 -->
+            <section class="board-news board-section white-box">
+              <!-- 뉴스 헤더 -->
+              <div class="board-head">
+                <h2 class="news-tit"><a href="#">뉴스</a></h2>
+                <ul class="tab-menu" role="tablist">
+                  <li class="tab-item" role="tab" aria-selected="true">
+                    <button type="button" class="main-news selected">
+                      주요뉴스
+                    </button>
+                  </li>
+                  <li class="tab-item" role="tab" aria-selected="false">
+                    <button type="button">추천</button>
+                  </li>
+                  <li class="tab-item" role="tab" aria-selected="false">
+                    <button type="button">언론사</button>
+                  </li>
+                  <li class="tab-item" role="tab" aria-selected="false">
+                    <button type="button">심층탐사</button>
+                  </li>
+                  <li class="tab-item" role="tab" aria-selected="false">
+                    <button type="button">경제</button>
+                  </li>
+                  <li class="tab-item" role="tab" aria-selected="false">
+                    <button type="button">라이브</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 뉴스 컨텐츠 -->
+              <div class="board-content-layout1">
+                <h3 class="sr-hidden">게시글 목록</h3>
+                <!-- 뉴스 왼쪽 컨텐츠 -->
+                <div class="left-area">
+                  <ul class="post-list-with-thumb">
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/news_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            (영상) “우크라군이 자국 군인 70명 살해”…충격적 비난
+                            쏟아진 이유 [포착]
+                          </figcaption>
+                          <span class="news-name">연합뉴스TV</span>
+                        </figure>
+                      </a>
+                    </li>
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/news_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            (영상) “우크라군이 자국 군인 70명 살해”…충격적 비난
+                            쏟아진 이유 [포착]
+                          </figcaption>
+                          <span class="news-name">연합뉴스TV</span>
+                        </figure>
+                      </a>
+                    </li>
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/news_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            (영상) “우크라군이 자국 군인 70명 살해”…충격적 비난
+                            쏟아진 이유 [포착]
+                          </figcaption>
+                          <span class="news-name">연합뉴스TV</span>
+                        </figure>
+                      </a>
+                    </li>
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/news_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            (영상) “우크라군이 자국 군인 70명 살해”…충격적 비난
+                            쏟아진 이유 [포착]
+                          </figcaption>
+                          <span class="news-name">연합뉴스TV</span>
+                        </figure>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 뉴스 오른쪽 컨텐츠 -->
+                <div class="right-area">
+                  <ul class="post-list-only-tit">
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >이준석 찾아간 안철수…李 “고맙지만 단일화 신경 쓰지
+                          않아”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >이준석 찾아간 안철수…李 “고맙지만 단일화 신경 쓰지
+                          않아”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >이준석 찾아간 안철수…李 “고맙지만 단일화 신경 쓰지
+                          않아”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >이준석 찾아간 안철수…李 “고맙지만 단일화 신경 쓰지
+                          않아”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >이준석 찾아간 안철수…李 “고맙지만 단일화 신경 쓰지
+                          않아”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >이준석 찾아간 안철수…李 “고맙지만 단일화 신경 쓰지
+                          않아”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >이준석 찾아간 안철수…李 “고맙지만 단일화 신경 쓰지
+                          않아”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >이준석 찾아간 안철수…李 “고맙지만 단일화 신경 쓰지
+                          않아”</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 뉴스 푸터 -->
+              <div class="board-foot">
+                <div class="page-functions">
+                  <h3 class="sr-hidden">페이지 기능들</h3>
+                  <button
+                    class="circle-angle-btn prev-btn"
+                    aria-label="이전"
+                  ></button>
+                  <a href="#" class="page-display">
+                    <span class="page-txt"><b>주요 뉴스</b> 더보기</span>
+                    <span class="page-count"
+                      ><span class="current" aria-label="현재 페이지 4">
+                        4 </span
+                      ><span class="total" aria-label="전체 페이지 5"
+                        >/ 5</span
+                      ></span
+                    >
+                  </a>
+                  <button class="circle-angle-btn" aria-label="다음"></button>
+                </div>
+                <a href="#" class="gray-btn">[특집] 21대 대선특집</a>
+              </div>
+            </section>
+            <!-- 광고 배너 2 -->
+            <section class="left-ad-banner white-box">
+              <h2 class="sr-hidden">광고배너</h2>
+              <a href="#" class="ad-content" role="banner">
+                <span class="ad-mark"></span>
+                <img
+                  class="thumb-img"
+                  src="./imgs/left_ad_thumb1.jpg"
+                  alt="썸네일이미지"
+                />
+                <div class="txt-wrap">
+                  <span class="brand-name" aria-label="브랜드 세이브더칠드런">
+                    세이브더칠드런</span
+                  >
+                  <h3 class="tit">
+                    아이들을 구하는 기부팔찌를 착용하세요
+                    <button
+                      type="button"
+                      class="view-more-btn"
+                      aria-label="자세히 보기"
+                    ></button>
+                  </h3>
+                  <p class="desc">
+                    우리가 차는 긴급구호 팔찌가,재난 속 아이들을 구하는 힘이
+                    됩니다.
+                  </p>
+                </div>
+              </a>
+            </section>
+            <!-- 오늘의 주요 소식 -->
+            <section class="todays-news">
+              <div class="tit-wrap">
+                <div class="left">
+                  <h2>오늘의 주요 소식</h2>
+                  <video
+                    class="img_g"
+                    width="88"
+                    height="88"
+                    type="video/webm"
+                    playsinline=""
+                    autoplay=""
+                    loop=""
+                    src="https://t1.daumcdn.net/daumtop_deco/images/pctop/2023/issue_jordy2.webm"
+                    aria-hidden="true"
+                  ></video>
+                </div>
+
+                <div class="right">
+                  <h3 class="sr-hidden">페이지 불렛</h3>
+                  <ul class="page-bullets">
+                    <li
+                      class="page-bullet active"
+                      aria-selected="true"
+                      aria-label="1페이지"
+                    ></li>
+                    <li
+                      class="page-bullet"
+                      aria-selected="false"
+                      aria-label="2페이지"
+                    ></li>
+                    <li
+                      class="page-bullet"
+                      aria-selected="false"
+                      aria-label="3페이지"
+                    ></li>
+                  </ul>
+                  <a href="#" class="help-icon" aria-label="도움말"></a>
+                </div>
+              </div>
+              <h3 class="sr-hidden">주요 소식 슬라이드</h3>
+              <div class="swiper-wrap">
+                <button
+                  class="prev-btn circle-angle-btn"
+                  type="button"
+                  aria-label="이전"
+                ></button>
+                <button
+                  class="next-btn circle-angle-btn"
+                  type="button"
+                  aria-label="다음"
+                ></button>
+                <div class="swiper-wrap-inner">
+                  <h3 class="sr-hidden">주요 소식 슬라이드</h3>
+                  <ul class="swiper">
+                    <li class="slide">
+                      <h4 class="slide-tit entertainment">많이 본 연예</h4>
+                      <ol class="post-list">
+                        <li class="post-item">
+                          <a href="#" class="post-tit"
+                            ><span
+                              ><span class="ranking" aria-label="랭킹1">1</span
+                              >이현이, 방송 도중 안면+복부 강타→구급차
+                              이송…"정면으로 맞았다"</span
+                            ></a
+                          >
+                        </li>
+                        <li class="post-item">
+                          <a href="#" class="post-tit">
+                            <span
+                              ><span class="ranking" aria-label="랭킹2">2</span
+                              >이현이, 방송 도중 안면+복부 강타→구급차
+                              이송…"정면으로 맞았다"</span
+                            ></a
+                          >
+                        </li>
+                        <li class="post-item">
+                          <a href="#" class="post-tit">
+                            <span
+                              ><span class="ranking" aria-label="랭킹3">3</span
+                              >이현이, 방송 도중 안면+복부 강타→구급차
+                              이송…"정면으로 맞았다"</span
+                            ></a
+                          >
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="slide">
+                      <h4 class="slide-tit sport">많이 본 스포츠</h4>
+                      <ol class="post-list">
+                        <li class="post-item">
+                          <a href="#" class="post-tit"
+                            ><span
+                              ><span class="ranking" aria-label="랭킹1">1</span
+                              >'대박' 손흥민 유로파 우승 보너스→돈방석 앉는다!
+                              '최대 55억' 성과급 유력... '시상식 노메달' 아쉬움
+                              푼다</span
+                            ></a
+                          >
+                        </li>
+                        <li class="post-item">
+                          <a href="#" class="post-tit">
+                            <span
+                              ><span class="ranking" aria-label="랭킹2">2</span
+                              >'대박' 손흥민 유로파 우승 보너스→돈방석 앉는다!
+                              '최대 55억' 성과급 유력... '시상식 노메달' 아쉬움
+                              푼다</span
+                            ></a
+                          >
+                        </li>
+                        <li class="post-item">
+                          <a href="#" class="post-tit"
+                            ><span
+                              ><span class="ranking" aria-label="랭킹3">3</span
+                              >'대박' 손흥민 유로파 우승 보너스→돈방석 앉는다!
+                              '최대 55억' 성과급 유력... '시상식 노메달' 아쉬움
+                              푼다</span
+                            ></a
+                          >
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="slide">
+                      <h4 class="slide-tit toast">금요 지식토스트</h4>
+                      <ol class="post-list">
+                        <li class="post-item">
+                          <a href="#" class="post-tit">
+                            <span
+                              ><span class="ranking" aria-label="랭킹1">1</span
+                              >계속된 SPC 사망 사고, 문제는
+                              중대재해처벌법?</span
+                            ></a
+                          >
+                        </li>
+                        <li class="post-item">
+                          <a href="#" class="post-tit"
+                            ><span
+                              ><span class="ranking" aria-label="랭킹2">2</span
+                              >계속된 SPC 사망 사고, 문제는
+                              중대재해처벌법?</span
+                            ></a
+                          >
+                        </li>
+                        <li class="post-item">
+                          <a href="#" class="post-tit">
+                            <span>
+                              <span class="ranking" aria-label="랭킹3">3</span
+                              >계속된 SPC 사망 사고, 문제는
+                              중대재해처벌법?</span
+                            ></a
+                          >
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="slide"></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!-- 연예 섹션 -->
+            <section class="board-entertainment board-section white-box">
+              <!-- 연예 헤더 -->
+              <div class="board-head">
+                <h2 class="entertainment-tit"><a href="#">연예</a></h2>
+                <ul class="tab-menu" role="tablist">
+                  <li class="tab-item" role="tab" aria-selected="true">
+                    <button type="button" class="synthesis-ent selected">
+                      종합
+                    </button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">TV하이라이트</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">연예스토리</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">영화소식</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">많이 본</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 연예 컨텐츠 -->
+              <div class="board-content-layout1">
+                <h3 class="sr-hidden">게시글 목록</h3>
+                <!-- 연예 왼쪽 컨텐츠 -->
+                <div class="left-area">
+                  <h3 class="sr-hidden">썸네일 포함 게시글 목록</h3>
+                  <ul class="post-list-with-thumb">
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/enter_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            "동급생 폭행→흡연 논란"…한때 잘 나갔던 아역배우
+                            한예린, 행방 묘연
+                          </figcaption>
+                          <span class="news-name">TV리포트</span>
+                        </figure>
+                      </a>
+                    </li>
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/enter_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            "동급생 폭행→흡연 논란"…한때 잘 나갔던 아역배우
+                            한예린, 행방 묘연
+                          </figcaption>
+                          <span class="news-name">TV리포트</span>
+                        </figure>
+                      </a>
+                    </li>
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/enter_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            "동급생 폭행→흡연 논란"…한때 잘 나갔던 아역배우
+                            한예린, 행방 묘연
+                          </figcaption>
+                          <span class="news-name">TV리포트</span>
+                        </figure>
+                      </a>
+                    </li>
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/enter_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            "동급생 폭행→흡연 논란"…한때 잘 나갔던 아역배우
+                            한예린, 행방 묘연
+                          </figcaption>
+                          <span class="news-name">TV리포트</span>
+                        </figure>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 연예 오른쪽 컨텐츠 -->
+                <div class="right-area">
+                  <ul class="post-list-only-tit">
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >조보아, 집 털렸는데 “母 귀중품 가져간 도둑 불쌍, 연민
+                          느꼈다”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >조보아, 집 털렸는데 “母 귀중품 가져간 도둑 불쌍, 연민
+                          느꼈다”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >조보아, 집 털렸는데 “母 귀중품 가져간 도둑 불쌍, 연민
+                          느꼈다”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >조보아, 집 털렸는데 “母 귀중품 가져간 도둑 불쌍, 연민
+                          느꼈다”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >조보아, 집 털렸는데 “母 귀중품 가져간 도둑 불쌍, 연민
+                          느꼈다”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >조보아, 집 털렸는데 “母 귀중품 가져간 도둑 불쌍, 연민
+                          느꼈다”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >조보아, 집 털렸는데 “母 귀중품 가져간 도둑 불쌍, 연민
+                          느꼈다”</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >조보아, 집 털렸는데 “母 귀중품 가져간 도둑 불쌍, 연민
+                          느꼈다”</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 연예 푸터 -->
+              <div class="board-foot">
+                <div class="page-functions">
+                  <h3 class="sr-hidden">페이지 기능들</h3>
+                  <button
+                    class="circle-angle-btn prev-btn"
+                    aria-label="이전"
+                  ></button>
+                  <a href="#" class="page-display">
+                    <span class="page-txt"><b>연예 종합</b> 더보기</span>
+                    <span class="page-count"
+                      ><span class="current" aria-label="현재 페이지 1">1 </span
+                      ><span class="total" aria-label="전체 페이지 3"
+                        >/ 3</span
+                      ></span
+                    >
+                  </a>
+                  <button class="circle-angle-btn" aria-label="다음"></button>
+                </div>
+              </div>
+            </section>
+            <!--  스포츠 섹션 -->
+            <section class="board-sport board-section white-box">
+              <!-- 스포츠 헤더 -->
+              <div class="board-head">
+                <h2 class="sport-tit"><a href="#">스포츠</a></h2>
+                <ul class="tab-menu" role="tablist">
+                  <li class="tab-item" role="tab" aria-selected="true">
+                    <button type="button" class="synthesis-sport selected">
+                      종합
+                    </button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">영상</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">해외축구</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">야구</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">해외야구</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">골프</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 스포츠 컨텐츠 -->
+              <div class="board-content-layout1">
+                <h3 class="sr-hidden">게시글 목록</h3>
+                <!-- 스포츠 왼쪽 컨텐츠 -->
+                <div class="left-area">
+                  <ul class="post-list-with-thumb">
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/sport_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            외야를 호령하는 김호령의 호수비 [KIA vs KT]
+                          </figcaption>
+                          <span class="news-name">TV리포트</span>
+                        </figure>
+                      </a>
+                    </li>
+                    <li class="post-item-with-thumb">
+                      <a href="#">
+                        <figure>
+                          <span class="thumb-wrap">
+                            <img
+                              src="./imgs/sport_post_thumb.webp"
+                              alt="썸네일"
+                            />
+                          </span>
+                          <figcaption>
+                            외야를 호령하는 김호령의 호수비 [KIA vs KT]
+                          </figcaption>
+                          <span class="news-name">TV리포트</span>
+                        </figure>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 스포츠 경기정보 스와이퍼 -->
+                  <div class="sport-competition-swiper white-box">
+                    <h4 class="sr-hidden">경기 결과 목록</h4>
+                    <button
+                      type="button"
+                      aria-label="이전"
+                      class="prev-btn circle-angle-btn"
+                    ></button>
+                    <button
+                      type="button"
+                      aria-label="다음"
+                      class="next-btn circle-angle-btn"
+                    ></button>
+                    <!-- 경기결과,예정 -->
+                    <a href="#" class="competition-info">
+                      <div class="left" aria-hidden="true">
+                        <figure class="team-info">
+                          <img src="./imgs/totnum.webp" alt="토트넘로고" />
+                          <figcaption class="team-name">토트넘</figcaption>
+                        </figure>
+                        <span class="score">-</span>
+                      </div>
+                      <div class="right" aria-hidden="true">
+                        <span class="score">-</span>
+                        <figure class="team-info">
+                          <img src="./imgs/man_utd.webp" alt="맨유로고" />
+                          <figcaption class="team-name">맨유</figcaption>
+                        </figure>
+                      </div>
+                      <div class="center" aria-hidden="true">
+                        <span class="badge">분석</span>
+                        <span class="time">04:00</span>
+                        <span class="league-name">UEL</span>
+                      </div>
+                    </a>
+                    <!-- 경기결과,예정 -->
+                    <a href="#" class="competition-info">
+                      <div class="left" aria-hidden="true">
+                        <figure class="team-info">
+                          <img src="./imgs/totnum.webp" alt="토트넘로고" />
+                          <figcaption class="team-name">토트넘</figcaption>
+                        </figure>
+                        <span class="score">-</span>
+                      </div>
+                      <div class="right" aria-hidden="true">
+                        <span class="score">-</span>
+                        <figure class="team-info">
+                          <img src="./imgs/man_utd.webp" alt="맨유로고" />
+                          <figcaption class="team-name">맨유</figcaption>
+                        </figure>
+                      </div>
+                      <div class="center" aria-hidden="true">
+                        <span class="badge">분석</span>
+                        <span class="time">04:00</span>
+                        <span class="league-name">UEL</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- 스포츠 오른쪽 컨텐츠 -->
+                <div class="right-area">
+                  <ul class="post-list-only-tit">
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >'이럴 수가' 손흥민, 유로파 결승 선발 제외→후반 조커
+                          기용 유력 (英 매체)</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >'이럴 수가' 손흥민, 유로파 결승 선발 제외→후반 조커
+                          기용 유력 (英 매체)</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >'이럴 수가' 손흥민, 유로파 결승 선발 제외→후반 조커
+                          기용 유력 (英 매체)</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >'이럴 수가' 손흥민, 유로파 결승 선발 제외→후반 조커
+                          기용 유력 (英 매체)</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >'이럴 수가' 손흥민, 유로파 결승 선발 제외→후반 조커
+                          기용 유력 (英 매체)</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >'이럴 수가' 손흥민, 유로파 결승 선발 제외→후반 조커
+                          기용 유력 (英 매체)</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >'이럴 수가' 손흥민, 유로파 결승 선발 제외→후반 조커
+                          기용 유력 (英 매체)</span
+                        ></a
+                      >
+                    </li>
+                    <li class="post-item-only-tit">
+                      <a href="#"
+                        ><span
+                          >'이럴 수가' 손흥민, 유로파 결승 선발 제외→후반 조커
+                          기용 유력 (英 매체)</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 스포츠 푸터 -->
+              <div class="board-foot">
+                <div class="page-functions">
+                  <h3 class="sr-hidden">페이지 기능들</h3>
+                  <button
+                    class="circle-angle-btn prev-btn"
+                    aria-label="이전"
+                  ></button>
+                  <a href="#" class="page-display">
+                    <span class="page-txt"><b>스포츠 종합</b> 더보기</span>
+                    <span class="page-count"
+                      ><span class="current" aria-label="현재 페이지 1">1 </span
+                      ><span class="total" aria-label="현재 페이지 3"
+                        >/ 3</span
+                      ></span
+                    >
+                  </a>
+                  <button class="circle-angle-btn" aria-label="다음"></button>
+                </div>
+                <a href="#" class="gray-btn">스포츠 홈</a>
+              </div>
+            </section>
+            <!-- 카페 섹션-->
+            <section class="board-cafe board-section white-box">
+              <!-- 카페 헤더 -->
+              <div class="board-head">
+                <h2 class="cafe-tit"><a href="#">카페・스토리</a></h2>
+                <ul class="tab-menu" role="tablist">
+                  <li class="tab-item" role="tab" aria-selected="true">
+                    <button type="button" class="cafe selected">카페</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">티스토리</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">브런치스토리</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">카카오스토리</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">응원하기</button>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 카페 컨텐츠 -->
+              <div class="board-content-layout2">
+                <h3 class="sr-hidden">게시글 목록</h3>
+                <ol class="post-list left">
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="post-order">1</span>
+                      <div class="txt-wrap">
+                        <h4 class="post-tit">
+                          우리집 강아지 무슨 믹스지...ㅋㅋㅋㅋ곱슬강ㅇ아우리집
+                          강아지 무슨 믹스지...ㅋㅋㅋㅋ곱슬강ㅇ아
+                        </h4>
+                        <span class="comment-count">댓글520</span>
+                      </div>
+                      <div class="thumb-wrap">
+                        <img
+                          src="./imgs/caft_post_thumb.webp"
+                          alt="썸네일"
+                        /></div
+                    ></a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="post-order">2</span>
+                      <div class="txt-wrap">
+                        <h4 class="post-tit">
+                          우리집 강아지 무슨 믹스지...ㅋㅋㅋㅋ곱슬강ㅇ아우리집
+                          강아지 무슨 믹스지...ㅋㅋㅋㅋ곱슬강ㅇ아
+                        </h4>
+                        <span class="comment-count">댓글520</span>
+                      </div>
+                      <div class="thumb-wrap">
+                        <img
+                          src="./imgs/caft_post_thumb.webp"
+                          alt="썸네일"
+                        /></div
+                    ></a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="post-order">3</span>
+                      <div class="txt-wrap">
+                        <h4 class="post-tit">
+                          우리집 강아지 무슨 믹스지...ㅋㅋㅋㅋ곱슬강ㅇ아우리집
+                          강아지 무슨 믹스지...ㅋㅋㅋㅋ곱슬강ㅇ아
+                        </h4>
+                        <span class="comment-count">댓글520</span>
+                      </div>
+                      <div class="thumb-wrap">
+                        <img
+                          src="./imgs/caft_post_thumb.webp"
+                          alt="썸네일"
+                        /></div
+                    ></a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="post-order">4</span>
+                      <div class="txt-wrap">
+                        <h4 class="post-tit">
+                          우리집 강아지 무슨 믹스지...ㅋㅋㅋㅋ곱슬강ㅇ아우리집
+                          강아지 무슨 믹스지...ㅋㅋㅋㅋ곱슬강ㅇ아
+                        </h4>
+                        <span class="comment-count">댓글520</span>
+                      </div>
+                      <div class="thumb-wrap">
+                        <img
+                          src="./imgs/caft_post_thumb.webp"
+                          alt="썸네일"
+                        /></div
+                    ></a>
+                  </li>
+                </ol>
+                <ol class="post-list right">
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="post-order">5</span>
+                      <div class="txt-wrap">
+                        <h4 class="post-tit">
+                          스크랩 배꼽의행방 거지달글 ㅈㄴ웃기다ㅋㅋㅋ
+                        </h4>
+                        <span class="comment-count">댓글20</span>
+                      </div>
+                      <div class="thumb-wrap">
+                        <img
+                          src="./imgs/caft_post_thumb2.webp"
+                          alt="썸네일"
+                        /></div
+                    ></a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="post-order">6</span>
+                      <div class="txt-wrap">
+                        <h4 class="post-tit">
+                          스크랩 배꼽의행방 거지달글 ㅈㄴ웃기다ㅋㅋㅋ
+                        </h4>
+                        <span class="comment-count">댓글20</span>
+                      </div>
+                      <div class="thumb-wrap">
+                        <img
+                          src="./imgs/caft_post_thumb2.webp"
+                          alt="썸네일"
+                        /></div
+                    ></a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="post-order">7</span>
+                      <div class="txt-wrap">
+                        <h4 class="post-tit">
+                          스크랩 배꼽의행방 거지달글 ㅈㄴ웃기다ㅋㅋㅋ
+                        </h4>
+                        <span class="comment-count">댓글20</span>
+                      </div>
+                      <div class="thumb-wrap">
+                        <img
+                          src="./imgs/caft_post_thumb2.webp"
+                          alt="썸네일"
+                        /></div
+                    ></a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="post-order">8</span>
+                      <div class="txt-wrap">
+                        <h4 class="post-tit">
+                          스크랩 배꼽의행방 거지달글 ㅈㄴ웃기다ㅋㅋㅋ
+                        </h4>
+                        <span class="comment-count">댓글20</span>
+                      </div>
+                      <div class="thumb-wrap">
+                        <img
+                          src="./imgs/caft_post_thumb2.webp"
+                          alt="썸네일"
+                        /></div
+                    ></a>
+                  </li>
+                </ol>
+              </div>
+              <!-- 카페 푸터 -->
+              <div class="board-foot">
+                <div class="page-functions">
+                  <h3 class="sr-hidden">페이지 기능들</h3>
+                  <button
+                    class="circle-angle-btn prev-btn"
+                    aria-label="이전"
+                  ></button>
+                  <a href="#" class="page-display">
+                    <span class="page-txt"><b>카페 인기글</b> 더보기</span>
+                    <span class="page-count"
+                      ><span class="current" aria-label="현재 페이지 1">1 </span
+                      ><span class="total" aria-label="현재 페이지 3"
+                        >/ 3</span
+                      ></span
+                    >
+                  </a>
+                  <button class="circle-angle-btn" aria-label="다음"></button>
+                </div>
+              </div>
+            </section>
+            <!-- 관심 키워드 섹션 -->
+            <section class="board-keyword board-section white-box">
+              <!-- 관심 키워드 헤더 -->
+              <div class="board-head">
+                <h2 class="keyword-tit"><a href="#">관심 키워드</a></h2>
+                <ul class="tab-menu" role="tablist">
+                  <li class="tab-item" role="tab" aria-selected="true">
+                    <button type="button" class="recommend selected">
+                      추천
+                    </button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">FUN</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">푸드</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">여행</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">자동차</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">IT테크</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">웹툰</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 관심 키워드 컨텐츠 -->
+              <div class="board-content-layout3">
+                <h3 class="sr-hidden">게시글 목록</h3>
+                <ul class="post-list">
+                  <li class="post-item has-big-thumb">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img
+                            src="./imgs/keyword_big_thumb.jfif"
+                            alt="썸네일"
+                          />
+                        </span>
+
+                        <figcaption>
+                          <span class="post-tit"
+                            >"사전 예약만 10만 대" 2천만 원대 가성비 앞세운 전기
+                            픽업트럭 등장</span
+                          >
+                          <span class="source" aria-label="출처 오토포크"
+                            >오토포크</span
+                          >
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <span class="thumb-wrap"
+                        ><img src="./imgs/keyword_thumb.webp" alt="썸네일" />
+                      </span>
+                      <span class="post-tit">
+                        4천만원으로 11평 시골집 짓기 4. 다시 생각해보는 기초
+                      </span>
+                      <span
+                        class="source"
+                        aria-label="출처 전원주택라이프 카테고리 인테리어"
+                      >
+                        <span class="category" aria-label="카테고리 인테리어"
+                          >인테리어</span
+                        >
+                        전원주택라이프
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 관심 키워드 푸터 -->
+              <div class="board-foot">
+                <div class="page-functions">
+                  <h3 class="sr-hidden">페이지 기능들</h3>
+                  <button
+                    class="circle-angle-btn prev-btn"
+                    aria-label="이전"
+                  ></button>
+                  <a href="#" class="page-display">
+                    <span class="page-txt"><b>추천</b> 더보기</span>
+                    <span class="page-count"
+                      ><span class="current">1 </span
+                      ><span class="total">/ 3</span></span
+                    >
+                  </a>
+                  <button class="circle-angle-btn" aria-label="다음"></button>
+                </div>
+              </div>
+            </section>
+            <!-- 쇼핑 섹션 -->
+            <section class="board-shopping board-section white-box">
+              <!-- 쇼핑 헤더 -->
+              <div class="board-head">
+                <h2 class="shopping-tit"><a href="#">쇼핑</a></h2>
+                <ul class="tab-menu" role="tablist">
+                  <li class="tab-item" role="tab" aria-selected="true">
+                    <button type="button" class="trend selected">
+                      스타일 트렌드
+                    </button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">인기 쇼핑 키워드</button>
+                  </li>
+                  <li class="tab-item" role="tab">
+                    <button type="button">오늘의 톡딜</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 쇼핑 컨텐츠 -->
+              <div class="board-content-layout4">
+                <h3 class="sr-hidden">게시글 목록</h3>
+                <ul class="post-list">
+                  <li class="post-item">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img src="./imgs/shop_post_thumb.jfif" alt="썸네일" />
+                        </span>
+                        <figcaption>
+                          +베스띠벨리+ <br />
+                          하객룩특가!
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img src="./imgs/shop_post_thumb.jfif" alt="썸네일" />
+                        </span>
+                        <figcaption>
+                          +베스띠벨리+ <br />
+                          하객룩특가!
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img src="./imgs/shop_post_thumb.jfif" alt="썸네일" />
+                        </span>
+                        <figcaption>
+                          +베스띠벨리+ <br />
+                          하객룩특가!
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img src="./imgs/shop_post_thumb.jfif" alt="썸네일" />
+                        </span>
+                        <figcaption>
+                          +베스띠벨리+ <br />
+                          하객룩특가!
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img src="./imgs/shop_post_thumb.jfif" alt="썸네일" />
+                        </span>
+                        <figcaption>
+                          +베스띠벨리+ <br />
+                          하객룩특가!
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img src="./imgs/shop_post_thumb.jfif" alt="썸네일" />
+                        </span>
+                        <figcaption>
+                          +베스띠벨리+ <br />
+                          하객룩특가!
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img src="./imgs/shop_post_thumb.jfif" alt="썸네일" />
+                        </span>
+                        <figcaption>
+                          +베스띠벨리+ <br />
+                          하객룩특가!
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li class="post-item">
+                    <a href="#">
+                      <figure>
+                        <span class="thumb-wrap">
+                          <img src="./imgs/shop_post_thumb.jfif" alt="썸네일" />
+                        </span>
+                        <figcaption>
+                          +베스띠벨리+ <br />
+                          하객룩특가!
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 쇼핑 푸터 -->
+              <div class="board-foot">
+                <div class="page-functions">
+                  <h3 class="sr-hidden">페이지 기능들</h3>
+                  <button
+                    class="circle-angle-btn prev-btn"
+                    aria-label="이전"
+                  ></button>
+                  <a href="#" class="page-display">
+                    <span class="page-txt"><b>스타일 트렌드</b> 더보기</span>
+                    <span class="page-count"
+                      ><span class="current">1 </span
+                      ><span class="total">/ 3</span></span
+                    >
+                  </a>
+                  <a href="#" class="ad-badge"></a>
+                  <button class="circle-angle-btn" aria-label="다음"></button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- 메인 오른쪽 -->
+          <div class="main-right">
+            <!-- 로그인 영역 -->
+            <section class="login-area white-box">
+              <h2 class="sr-hidden">로그인 영역</h2>
+              <p class="login-comment">
+                이제 카카오계정으로 Daum을 이용해주세요.
+              </p>
+              <div class="login-btn-wrap">
+                <a href="#" class="login-btn">카카오계정으로 로그인</a>
+              </div>
+            </section>
+            <!-- 날씨 영역 -->
+            <section class="weather-area white-box">
+              <h2 class="sr-hidden">오늘의 날씨</h2>
+              <a href="#">
+                <div class="left">
+                  <figure>
+                    <img
+                      class="weather-icon"
+                      src="./imgs/weather_icon"
+                      alt="비온 후 갬"
+                    />
+
+                    <figcaption>
+                      <strong>비온 후 갬</strong>
+                      <span class="dust"
+                        ><span>미세 <span class="well">좋음</span></span
+                        ><span
+                          >초미세 <span class="normal">보통</span></span
+                        ></span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="right">
+                  <span class="temp-current"
+                    ><span class="sr-hidden">현재온도</span>19.3°</span
+                  ><span class="temp-minmax"
+                    ><span class="max"
+                      ><span class="sr-hidden">최고온도</span>20°</span
+                    >
+                    /
+                    <span class="min"
+                      ><span class="sr-hidden">최저온도</span>16°</span
+                    ></span
+                  >
+                </div>
+              </a>
+            </section>
+
+            <!-- 오른쪽 쇼핑 영역 -->
+            <section class="shopping-area white-box">
+              <div class="right-title-wrap">
+                <h2><a href="#">쇼핑</a></h2>
+                <div class="shop-links">
+                  <a class="coupang" href="#">쿠팡</a>
+                  <a class="g-market" href="#">G마켓</a>
+                </div>
+              </div>
+              <h3 class="sr-hidden">쇼핑몰 링크 모음</h3>
+              <ul class="shop-link-list">
+                <li class="shop-link-item">
+                  <a href="#">하프클럽</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">옥션</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">리린</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">11번가</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">아이스탁몰</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">캔마트</a>
+                </li>
+              </ul>
+              <ul class="shop-link-list">
+                <li class="shop-link-item">
+                  <a href="#">패션플러스</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">모놀로그</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">STL</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">제이슈</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">뮬리안</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">루노</a>
+                </li>
+              </ul>
+              <ul class="shop-link-list">
+                <li class="shop-link-item">
+                  <a href="#">시크라인</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">신데렐라</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">로즈몽</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">클릭앤퍼니</a>
+                </li>
+                <li class="dot"></li>
+                <li class="shop-link-item">
+                  <a href="#">M미소페</a>
+                </li>
+              </ul>
+              <h3 class="sr-hidden">상품 리스트</h3>
+              <ul class="product-list">
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li class="product-item">
+                  <a href="#">
+                    <figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shop_right_item.jfif"
+                          alt="상품썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        브랜드 뺨쳐~ <br />
+                        초경량 러닝화
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+              <div class="right-section-foot">
+                <div class="page-functions">
+                  <button
+                    type="button"
+                    class="prev-btn circle-angle-btn"
+                    aria-label="이전"
+                  ></button>
+                  <span class="page-count"
+                    ><span class="current" aria-label="현재 페이지 1"> 1 </span
+                    ><span class="total" aria-label="전체 페이지 3"
+                      >/ 3</span
+                    ></span
+                  >
+                  <button
+                    type="button"
+                    class="next-btn circle-angle-btn"
+                    aria-label="다음"
+                  ></button>
+                  <a href="#" class="ad-badge"> </a>
+                </div>
+              </div>
+            </section>
+            <!-- 오른쪽 증권 영역 -->
+            <section class="stock-area white-box">
+              <div class="right-title-wrap">
+                <h2><a href="#">증권</a></h2>
+                <button
+                  type="button"
+                  class="dropdown-icon"
+                  aria-label="더보기"
+                ></button>
+              </div>
+              <h3 class="sr-hidden">증권 리스트</h3>
+              <ul class="stock-list">
+                <li class="stock-item">
+                  <a href="#">
+                    <span class="stock-name">미국 USD</span>
+                    <strong class="stock-num">1,368</strong>
+                    <span class="stock-badge down">-0.06%</span>
+                  </a>
+                </li>
+                <li class="stock-item">
+                  <a href="#">
+                    <span class="stock-name">미국 USD</span>
+                    <strong class="stock-num">1,368</strong>
+                    <span class="stock-badge down">-0.06%</span>
+                  </a>
+                </li>
+                <li class="stock-item">
+                  <a href="#">
+                    <span class="stock-name">미국 USD</span>
+                    <strong class="stock-num">1,368</strong>
+                    <span class="stock-badge up">+0.06%</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <!-- 오른쪽 오늘의 루프 영역-->
+            <section class="loop-area white-box">
+              <div class="right-title-wrap">
+                <h2><a href="#">오늘의 루프</a></h2>
+              </div>
+              <div class="loop-content">
+                <h3 class="sr-hidden">오늘의 루프 쇼츠</h3>
+                <a href="#"
+                  ><img src="./imgs/loop_thumb.webp" alt="썸네일"
+                /></a>
+              </div>
+              <div class="right-section-foot">
+                <div class="page-functions">
+                  <button
+                    type="button"
+                    class="prev-btn circle-angle-btn"
+                    aria-label="이전"
+                  ></button>
+                  <span class="page-count"
+                    ><span class="current" aria-label="현재 페이지 1"> 1 </span
+                    ><span class="total" aria-label="전체 페이지 3"
+                      >/ 3</span
+                    ></span
+                  >
+                  <button
+                    type="button"
+                    class="next-btn circle-angle-btn"
+                    aria-label="다음"
+                  ></button>
+                </div>
+              </div>
+            </section>
+            <!-- 오른쪽 기획전 영역 -->
+            <section class="planned-area white-box">
+              <div class="right-title-wrap">
+                <h2><a href="#">기획전</a></h2>
+              </div>
+              <h3 class="sr-hidden">기획전 리스트</h3>
+              <ul class="planned-list">
+                <li class="planned-item">
+                  <a href="#"
+                    ><figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shophow_20250507162503.png"
+                          alt="썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        <strong class="tit">각양각색 요리 집게</strong>
+                        <span class="desc"
+                          >다용도로 활용할 수 있는 주방 필수템</span
+                        >
+                      </figcaption>
+                    </figure></a
+                  >
+                </li>
+                <li class="planned-item">
+                  <a href="#"
+                    ><figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shophow_20250507162503.png"
+                          alt="썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        <strong class="tit">각양각색 요리 집게</strong>
+                        <span class="desc"
+                          >다용도로 활용할 수 있는 주방 필수템</span
+                        >
+                      </figcaption>
+                    </figure></a
+                  >
+                </li>
+                <li class="planned-item">
+                  <a href="#"
+                    ><figure>
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/shophow_20250507162503.png"
+                          alt="썸네일"
+                        />
+                      </span>
+                      <figcaption>
+                        <strong class="tit">각양각색 요리 집게</strong>
+                        <span class="desc"
+                          >다용도로 활용할 수 있는 주방 필수템</span
+                        >
+                      </figcaption>
+                    </figure></a
+                  >
+                </li>
+              </ul>
+              <a href="#" class="planned-event">생필품 총집합 최대 70%할인</a>
+              <div class="right-section-foot">
+                <div class="page-functions">
+                  <button
+                    type="button"
+                    class="prev-btn circle-angle-btn"
+                    aria-label="이전"
+                  ></button>
+                  <span class="page-count"
+                    ><span class="current" aria-label="현재 페이지 1"> 1 </span
+                    ><span class="total" aria-label="전체 페이지 3"
+                      >/ 3</span
+                    ></span
+                  >
+                  <button
+                    type="button"
+                    class="next-btn circle-angle-btn"
+                    aria-label="다음"
+                  ></button>
+                </div>
+              </div>
+            </section>
+            <!-- 오른쪽 추천 게임 영역 -->
+            <section class="recommend-game-area white-box">
+              <div class="right-title-wrap">
+                <h2><a href="#">추천 게임</a></h2>
+              </div>
+              <h3 class="sr-hidden">추천 게임 목록</h3>
+              <ul class="recommend-game-list">
+                <li class="square-card recommend-game-item">
+                  <a href="#">
+                    <span
+                      class="thumb-group"
+                      aria-label="썸네일 이미지"
+                      role="img"
+                    >
+                      <img
+                        class="thumb-bg"
+                        src="./imgs/game_card_bg.webp"
+                        alt="배경"
+                      />
+                      <img
+                        class="thumb-character"
+                        src="./imgs/game_card_character.webp"
+                        alt="캐릭터"
+                      />
+                    </span>
+                    <div class="txt-wrap">
+                      <h3 class="tit">크로노 오디세이</h3>
+                      <p class="desc">멈춰 있던 시간이 흐른다</p>
+                      <span class="genre">MMORPG</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="square-card recommend-game-item">
+                  <a href="#">
+                    <span
+                      class="thumb-group"
+                      aria-label="썸네일 이미지"
+                      role="img"
+                    >
+                      <img
+                        class="thumb-bg"
+                        src="./imgs/game_card_bg.webp"
+                        alt="배경"
+                      />
+                      <img
+                        class="thumb-character"
+                        src="./imgs/game_card_character.webp"
+                        alt="캐릭터"
+                      />
+                    </span>
+                    <div class="txt-wrap">
+                      <h3 class="tit">크로노 오디세이</h3>
+                      <p class="desc">멈춰 있던 시간이 흐른다</p>
+                      <span class="genre">MMORPG</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="right-section-foot">
+                <div class="page-functions">
+                  <button
+                    type="button"
+                    class="prev-btn circle-angle-btn"
+                    aria-label="이전"
+                  ></button>
+                  <span class="page-count"
+                    ><span class="current" aria-label="현재 페이지 1"> 1 </span
+                    ><span class="total" aria-label="전체 페이지 3"
+                      >/ 3</span
+                    ></span
+                  >
+                  <button
+                    type="button"
+                    class="next-btn circle-angle-btn"
+                    aria-label="다음"
+                  ></button>
+                </div>
+              </div>
+            </section>
+            <!-- 오른쪽 후원 영역 -->
+            <section class="support-area white-box">
+              <div class="right-title-wrap">
+                <h2><a href="#">세상을 위한 따뜻한 마음</a></h2>
+              </div>
+              <h3 class="sr-hidden">모금 기관</h3>
+              <div class="support-content">
+                <a href="#"
+                  ><div class="txt-wrap">
+                    <h4 class="support-tit">절망 속 뜬장에서 가족의 품으로!</h4>
+                    <span class="support-organ">사단법인 위액트</span>
+                  </div>
+                  <div class="thumb-wrap">
+                    <img src="./imgs/support_thumb.webp" alt="썸네일" /></div
+                ></a>
+              </div>
+              <h3 class="sr-hidden">모금 현황</h3>
+              <div class="support-range">
+                <div class="bar-area">
+                  <span class="walk-icon">
+                    <img
+                      src="./imgs/support-gif.webp"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </span>
+                  <div class="bar">
+                    <span class="progress"></span>
+                  </div>
+                </div>
+                <div class="label-area">
+                  <span>31% 달성</span>
+                  <span>11,000,000원</span>
+                </div>
+              </div>
+              <div class="right-section-foot">
+                <div class="page-functions">
+                  <button
+                    type="button"
+                    class="prev-btn circle-angle-btn"
+                    aria-label="이전"
+                  ></button>
+                  <span class="page-count"
+                    ><span class="current" aria-label="현재 페이지 1"> 1 </span
+                    ><span class="total" aria-label="전체 페이지 3"
+                      >/ 3</span
+                    ></span
+                  >
+                  <button
+                    type="button"
+                    class="next-btn circle-angle-btn"
+                    aria-label="다음"
+                  ></button>
+                </div>
+              </div>
+            </section>
+            <!-- 오른쪽 엔터테인먼트 랭킹 영역 -->
+            <section class="enter-ranking-area white-box">
+              <div class="right-title-wrap">
+                <h2><a href="#">엔터테인먼트 랭킹</a></h2>
+                <span class="comment"
+                  >카카오엔터테인먼트 제공
+                  <a class="help" href="#" aria-label="도움말"></a
+                ></span>
+              </div>
+              <ul class="tab-list" role="tablist">
+                <li
+                  class="tab-item selected"
+                  id="enter-rank-tab1"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="enter-rank-tabpanel1"
+                >
+                  <button type="button">멜론 탑100</button>
+                </li>
+                <li class="tab-item" role="tab" aria-selected="false">
+                  <button type="button">박스오피스</button>
+                </li>
+              </ul>
+              <h3 class="sr-hidden">탭 슬라이드</h3>
+              <div class="tabpanel-swiper-wrapper">
+                <button
+                  class="circle-angle-btn prev-btn"
+                  type="button"
+                  aria-label="이전"
+                ></button>
+                <button
+                  class="circle-angle-btn next-btn"
+                  type="button"
+                  aria-label="다음"
+                ></button>
+                <ol
+                  class="tabpanel-swiper"
+                  role="tabpanel"
+                  id="enter-rank-tabpanel1"
+                  aria-labelledby="enter-rank-tab1"
+                >
+                  <li class="tabpanel-slide square-card">
+                    <a href="#">
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/enter_ranking_thumb.webp"
+                          alt="앨범 썸네일"
+                        />
+                      </span>
+                      <div class="txt-wrap">
+                        <h3 class="tit">
+                          1<span class="sing-tit">너에게 닿기를</span>
+                        </h3>
+                        <span class="singer">10cm</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="tabpanel-slide square-card">
+                    <a href="#">
+                      <span class="thumb-wrap">
+                        <img
+                          src="./imgs/enter_ranking_thumb.webp"
+                          alt="앨범 썸네일"
+                        />
+                      </span>
+                      <div class="txt-wrap">
+                        <h3 class="tit">
+                          2<span class="sing-tit">너에게 닿기를</span>
+                        </h3>
+                        <span class="singer">10cm</span>
+                      </div>
+                    </a>
+                  </li>
+                </ol>
+              </div>
+            </section>
+            <!-- 오른쪽 오늘의 포토 영역 -->
+            <section class="todays-photo-area">
+              <h2>오늘의 포토</h2>
+              <h3 class="sr-hidden">슬라이드 영역</h3>
+              <div class="photo-swiper-wrapper">
+                <button
+                  class="circle-angle-btn prev-btn"
+                  type="button"
+                  aria-label="이전"
+                ></button>
+                <button
+                  class="circle-angle-btn next-btn"
+                  type="button"
+                  aria-label="다음"
+                ></button>
+                <ul class="swiper-bullets">
+                  <li class="swiper-bullet active"></li>
+                  <li class="swiper-bullet"></li>
+                  <li class="swiper-bullet"></li>
+                  <li class="swiper-bullet"></li>
+                  <li class="swiper-bullet"></li>
+                </ul>
+                <ul class="photo-swiper">
+                  <li class="photo-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./imgs/photo_slide_img.webp" alt="썸네일" />
+                        <figcaption>
+                          <div class="news-name">스포츠조선</div>
+                          <span class="desc"
+                            >[포토] 김태훈 '진지하게 타격 훈련'</span
+                          >
+                        </figcaption>
+                      </figure></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </main>
+        <!-- ====== 푸터 ===== -->
+        <footer id="footer">
+          <h2 class="sr-hidden">페이지 하단 링크들</h2>
+          <!-- 푸터 위쪽 영역 -->
+          <div class="footer-top">
+            <div class="left">
+              <a href="#"><strong>공지사항</strong></a>
+              <a href="#">디디(DD) 유저 사용설명서</a>
+            </div>
+            <a href="#" class="right"><strong>서비스 전체 보기</strong></a>
+          </div>
+          <!-- 푸터 아래쪽 영역 -->
+          <div class="footer-bottom">
+            <nav class="footer-nav">
+              <p class="line-1">
+                <a href="#">회사소개</a><a href="#">비즈니스</a
+                ><a href="#">맞춤형광고</a><a href="#">검색등록</a
+                ><a href="#">제휴문의</a><a href="#">인재채용</a>
+              </p>
+              <p class="line-2">
+                <a href="#">이용약관</a><a href="#">운영정책</a
+                ><a href="#"> 청소년보호정책</a
+                ><a href="#"><strong>위치정보이용약관</strong></a
+                ><a href="#"><strong>개인정보처리방침</strong></a
+                ><a href="#">웹접근성안내</a><a href="#">고객센터</a>
+              </p>
+            </nav>
+            <a href="#" class="copyright">
+              <strong>&copy; Kakao Corp.</strong>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

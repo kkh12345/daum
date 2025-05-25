@@ -1,0 +1,29 @@
+@use './fonts' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SFpro';
+}
+
+html {
+  font-size: 10px;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+img {
+  display: block;
+}
